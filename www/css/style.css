@@ -1,2 +1,90 @@
-/**/
+h1, p {
+    text-align: center;
+    
+    font-family: 'Arial', sans-serif !important;
+}
 
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+
+.mp-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background-color: rgb(255, 246, 209);
+}
+
+.mp-main {
+     position: absolute;
+     top: 70px;
+     right: 0;
+     bottom: 90px;
+     left: 0;
+     background-color: rgb(255, 246, 209);
+}
+
+.mp-footer {
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     height: 90px;
+     background-color: blue;
+}
+
+.mp-transition-button {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(255, 194, 0);
+    text-align: center;
+    line-height: 90px;
+}
+
+.mp-transition-button:active {
+    background-color: rgb(198, 144, 0);
+}
+
+.mp-transition-button.back {
+    background-color: rgb(198, 144, 0);
+}
+
+.mp-transition-button.back:active {
+    background-color: rgb(119, 86, 0);
+}
+
+.mp-input {
+    box-sizing: border-box;
+    border-style: none;
+    padding: 0 15px;
+    width: 300px;
+    height: 50px;
+    
+    background-color: white;
+    
+    line-height: 50px;
+    font-size: 16px;
+    
+    color: #666;
+}
+
+.mp-signin-button {
+    display: inline-block;
+    
+    border-radius: 75px;
+    width: 300px;
+    height: 75px;
+
+    background-color: rgb(255, 194, 0);
+
+    text-align: center;
+    line-height: 75px;
+    color: white;
+    font-size: 25px;
+}
+
+.mp-signin-button:active {
+    background-color: rgb(198, 144, 0);
+}

@@ -1,17 +1,31 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
     <script>
+        ons.ready(function(){
+            ons.disableAutoStyling();
+            document.querySelector('#mp-tabbar').setTabbarVisibility(false);
+        });
     </script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+    <ons-navigator id="mp-navigator">
+        <ons-page>
+            <ons-tabbar id="mp-tabbar"
+                        animation="slide"
+                        animation-options="{duration: 0.25, delay: 0.05, timing: 'ease-out'}">
+              <ons-tab page="template/onboarding/0capture.html" active></ons-tab>
+              <ons-tab page="template/onboarding/1beautify.html"></ons-tab>
+              <ons-tab page="template/onboarding/2share.html"></ons-tab>
+              <ons-tab page="template/onboarding/3letsbegin.html"></ons-tab>
+            </ons-tabbar>
+        </ons-page>
+    </ons-navigator>
 </body>
 </html>
