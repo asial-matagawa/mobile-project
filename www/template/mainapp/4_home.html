@@ -4,6 +4,12 @@
     </div>
 
     <ons-bottom-toolbar modifier="transparent" style="background-color: rgb(246, 246, 246);">
-        <img src="image/4_home_trimmed_footer.png" style="width: 100%; height: 100%; object-fit: contain;">
+        <img src="image/4_home_trimmed_footer.png"
+             style="width: 100%; height: 100%; object-fit: contain;"
+             onclick="navigator.camera.getPicture(
+                        function(imageData){},
+                        function(message){},
+                        { quality: 50, destinationType: Camera.DestinationType.DATA_URL }
+                      );">
     </ons-bottom-toolbar>
 </ons-page>
